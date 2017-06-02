@@ -123,14 +123,29 @@
         ]
     },
     "log": {
-        "prefix": "log",
+        "prefix": "clog",
         "body": [
             "console.log('${1:text}')"
         ]
     },
     "bind": {
-        "prefix": "bind",
-        "body": "{ (this: any).${1:function} = this.${1:function}.bind(this) }${2}"
+        "prefix": "bd",
+        "body": "{ (this: any).${1:function} = this.${1:function}.bind(this) }"
+    },
+    "set state": {
+        "prefix": "sst",
+        "body": "this.setState({ ${1:key}: ${2:value} })"
+    },
+    "arrow function" : {
+        "prefix": "arrow function",
+        "body": [
+            "${1} = (${2}) => {",
+            "    ${3}",
+            "}"
+        ]
+    },
+    "ref" : {
+        "prefix": "ref",
+        "body": "ref={(e) => this.${1:obj} = e}"
     }
-    
 }
