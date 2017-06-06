@@ -44,7 +44,6 @@
             "backgroundColor: 'white',"
         ]
     },
-
     "constructor": {
         "prefix": "cst",
         "body": [
@@ -106,14 +105,12 @@
             "})"
         ]
     },
-
     "debug fuck": {
         "prefix": "fuck",
         "body": [
             "alert('fuck')"
         ]
     },
-
     "navigation ": {
         "prefix": "navopt",
         "body": [
@@ -136,7 +133,7 @@
         "prefix": "sst",
         "body": "this.setState({ ${1:key}: ${2:value} })"
     },
-    "arrow function" : {
+    "arrow function": {
         "prefix": "arrow function",
         "body": [
             "${1} = (${2}) => {",
@@ -144,8 +141,43 @@
             "}"
         ]
     },
-    "ref" : {
+    "ref": {
         "prefix": "ref",
         "body": "ref={(e) => this.${1:obj} = e}"
+    },
+    "button": {
+        "prefix": "button",
+        "body": [
+            "<Button",
+            "    containerViewStyle={{ marginTop: 20 }}",
+            "    buttonStyle={{ height: 35 }}",
+            "    raised",
+            "    title='测  试'",
+            "    color='#ff0000'",
+            "    backgroundColor='#0000ff'",
+            "    iconRight",
+            "    // icon={{ name: 'align-vertical-middle', type: 'entypo', color: '#00ff00' }}",
+            "    iconComponent={() =>",
+            "        <Image",
+            "            style={{ width: 20, height: 20, margin: 5 }}",
+            "            source={require('../img/search_icon.png')}",
+            "       />",
+            "    }",
+            "/>"
+        ]
+    },
+    "searchBar": {
+        "prefix": "searchBar",
+        "body": [
+            "<SearchBar",
+            "    round",
+            "    lightTheme",
+            "    clearIcon",
+            "    textInputRef='searchBar'",
+            "    placeholder='Type Here...'",
+            "    containerStyle={{ backgroundColor: 'transparency', borderTopWidth: 0 ,borderBottomWidth:0}}",
+            "    inputStyle={{backgroundColor: 'red',}}",
+            "/>"
+        ]
     }
 }
