@@ -1,5 +1,5 @@
 {
-    /*
+  /*
 	// Place your snippets for Javascript (Babel) here. Each snippet is defined under a snippet name and has a prefix, body and 
 	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
@@ -14,171 +14,187 @@
 		"description": "Log output to console"
 	}
 */
-    "style flexDirection row": {
-        "prefix": "flex row",
-        "body": [
-            "flexDirection: 'row',"
-        ]
-    },
-    "style flexWrap wrap": {
-        "prefix": "flex wrap",
-        "body": [
-            "flexWrap: 'wrap',"
-        ]
-    },
-    "style justifyContent center": {
-        "prefix": "justify center",
-        "body": [
-            "justifyContent: 'center',"
-        ]
-    },
-    "style alignItems center": {
-        "prefix": "alignItems center",
-        "body": [
-            "alignItems: 'center',"
-        ]
-    },
-    "style backgroundColor white": {
-        "prefix": "backgroundColor white",
-        "body": [
-            "backgroundColor: 'white',"
-        ]
-    },
-    "constructor": {
-        "prefix": "cst",
-        "body": [
-            "constructor(props: Object) {",
-            "    super(props)",
-            "",
-            "    $1",
-            "}"
-        ]
-    },
-    "copyright": {
-        "prefix": "copyright",
-        "body": [
-            "/**",
-            " * Copyright (c) 2017-present, Liu Jinyong",
-            " * All rights reserved.",
-            " *",
-            " * @flow",
-            " */"
-        ]
-    },
-    "create class": {
-        "prefix": "rncc",
-        "body": [
-            "/**",
-            " * Copyright (c) 2017-present, Liu Jinyong",
-            " * All rights reserved.",
-            " *",
-            " * @flow",
-            " */",
-            "",
-            "import React, { PureComponent } from 'react'",
-            "import { View, StyleSheet } from 'react-native'",
-            "import { Text } from 'react-native-jykit'",
-            "",
-            "class ${1:MyClass} extends PureComponent {",
-            "",
-            "    render() {",
-            "        return (",
-            "            <View>",
-            "                ",
-            "            </View>",
-            "        )",
-            "    }",
-            "",
-            "}",
-            "",
-            "const styles = StyleSheet.create({",
-            "",
-            "})",
-            "",
-            "export default ${1:MyClass}"
-        ]
-    },
-    "then response": {
-        "prefix": "response",
-        "body": [
-            ".then(response => {",
-            "    ${1}",
-            "})"
-        ]
-    },
-    "debug fuck": {
-        "prefix": "fuck",
-        "body": [
-            "alert('fuck')"
-        ]
-    },
-    "navigation ": {
-        "prefix": "navopt",
-        "body": [
-            "static navigationOptions = ({ navigation }) => ({",
-            "    title: '${1:title}',",
-            "})"
-        ]
-    },
-    "log": {
-        "prefix": "clog",
-        "body": [
-            "console.log('${1:text}')"
-        ]
-    },
-    "bind": {
-        "prefix": "bd",
-        "body": "{ (this: any).${1:function} = this.${1:function}.bind(this) }"
-    },
-    "set state": {
-        "prefix": "sst",
-        "body": "this.setState({ ${1:key}: ${2:value} })"
-    },
-    "arrow function": {
-        "prefix": "arrow function",
-        "body": [
-            "${1} = (${2}) => {",
-            "    ${3}",
-            "}"
-        ]
-    },
-    "ref": {
-        "prefix": "ref",
-        "body": "ref={(e) => this.${1:obj} = e}"
-    },
-    "button": {
-        "prefix": "button",
-        "body": [
-            "<Button",
-            "    containerViewStyle={{ marginTop: 20 }}",
-            "    buttonStyle={{ height: 35 }}",
-            "    raised",
-            "    title='测  试'",
-            "    color='#ff0000'",
-            "    backgroundColor='#0000ff'",
-            "    iconRight",
-            "    // icon={{ name: 'align-vertical-middle', type: 'entypo', color: '#00ff00' }}",
-            "    iconComponent={() =>",
-            "        <Image",
-            "            style={{ width: 20, height: 20, margin: 5 }}",
-            "            source={require('../img/search_icon.png')}",
-            "       />",
-            "    }",
-            "/>"
-        ]
-    },
-    "searchBar": {
-        "prefix": "searchBar",
-        "body": [
-            "<SearchBar",
-            "    round",
-            "    lightTheme",
-            "    clearIcon",
-            "    textInputRef='searchBar'",
-            "    placeholder='Type Here...'",
-            "    containerStyle={{ backgroundColor: 'transparency', borderTopWidth: 0 ,borderBottomWidth:0}}",
-            "    inputStyle={{backgroundColor: 'red',}}",
-            "/>"
-        ]
-    }
+  "style flexDirection row": {
+    "prefix": "flex row",
+    "body": [
+      "flexDirection: 'row',"
+    ]
+  },
+  "style flexWrap wrap": {
+    "prefix": "flex wrap",
+    "body": [
+      "flexWrap: 'wrap',"
+    ]
+  },
+  "style justifyContent center": {
+    "prefix": "justify center",
+    "body": [
+      "justifyContent: 'center',"
+    ]
+  },
+  "style alignItems center": {
+    "prefix": "alignItems center",
+    "body": [
+      "alignItems: 'center',"
+    ]
+  },
+  "style backgroundColor white": {
+    "prefix": "backgroundColor white",
+    "body": [
+      "backgroundColor: 'white',"
+    ]
+  },
+  "constructor": {
+    "prefix": "cst",
+    "body": [
+      "constructor(props: Object) {",
+      "  super(props)",
+      "",
+      "  $1",
+      "}"
+    ]
+  },
+  "copyright": {
+    "prefix": "copyright",
+    "body": [
+      "/**",
+      " * Copyright (c) 2017-present, Liu Jinyong",
+      " * All rights reserved.",
+      " *",
+      " * @flow",
+      " */"
+    ]
+  },
+  "create class": {
+    "prefix": "rncc",
+    "body": [
+      "/**",
+      " * Copyright (c) 2017-present, Liu Jinyong",
+      " * All rights reserved.",
+      " *",
+      " * @flow",
+      " */",
+      "",
+      "import React, { PureComponent } from 'react'",
+      "import { View, StyleSheet } from 'react-native'",
+      "import { Text } from 'react-native-jykit'",
+      "",
+      "class ${1:MyClass} extends PureComponent {",
+      "",
+      "  render() {",
+      "    return (",
+      "      <View>",
+      "        ",
+      "      </View>",
+      "    )",
+      "  }",
+      "",
+      "}",
+      "",
+      "const styles = StyleSheet.create({",
+      "",
+      "})",
+      "",
+      "export default ${1:MyClass}"
+    ]
+  },
+  "then response": {
+    "prefix": "response",
+    "body": [
+      ".then(response => {",
+      "  ${1}",
+      "})"
+    ]
+  },
+  "debug fuck": {
+    "prefix": "fuck",
+    "body": [
+      "alert('fuck')"
+    ]
+  },
+  "navigation ": {
+    "prefix": "navopt",
+    "body": [
+      "static navigationOptions = ({ navigation }) => ({",
+      "  title: '${1:title}',",
+      "})"
+    ]
+  },
+  "log": {
+    "prefix": "clog",
+    "body": [
+      "console.log('${1:text}')"
+    ]
+  },
+  "set state": {
+    "prefix": "sst",
+    "body": "this.setState({ ${1:key}: ${2:value} })"
+  },
+  "arrow function": {
+    "prefix": "arrow function",
+    "body": [
+      "${1} = (${2}) => {",
+      "  ${3}",
+      "}"
+    ]
+  },
+  "ref": {
+    "prefix": "ref",
+    "body": "ref={(e) => this.${1:obj} = e}"
+  },
+  "button": {
+    "prefix": "button",
+    "body": [
+      "<Button",
+      "  containerViewStyle={{ marginTop: 20 }}",
+      "  buttonStyle={{ height: 35 }}",
+      "  raised",
+      "  title='测  试'",
+      "  color='#ff0000'",
+      "  backgroundColor='#0000ff'",
+      "  iconRight",
+      "  // icon={{ name: 'align-vertical-middle', type: 'entypo', color: '#00ff00' }}",
+      "  iconComponent={() =>",
+      "    <Image",
+      "      style={{ width: 20, height: 20, margin: 5 }}",
+      "      source={require('../img/search_icon.png')}",
+      "   />",
+      "  }",
+      "/>"
+    ]
+  },
+  "searchBar": {
+    "prefix": "searchBar",
+    "body": [
+      "<SearchBar",
+      "  round",
+      "  lightTheme",
+      "  clearIcon",
+      "  textInputRef='searchBar'",
+      "  placeholder='Type Here...'",
+      "  containerStyle={{ backgroundColor: 'transparency', borderTopWidth: 0 ,borderBottomWidth:0}}",
+      "  inputStyle={{backgroundColor: 'red',}}",
+      "/>"
+    ]
+  },
+  "setTimeout": {
+    "prefix": "setTimeout",
+    "body": [
+      "setTimeout(() => {",
+      "  ${1}",
+      "}, ${2:timeout})"
+    ]
+  },
+  "await": {
+    "prefix": "await",
+    "body": [
+      "try {",
+      "  let response = await fetch(${1})",
+      "  let json = await response.json()",
+      "  ${2}",
+      "} catch (error) {",
+      "  alert(error)",
+      "}"
+    ]
+  }
 }
