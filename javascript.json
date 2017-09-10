@@ -84,7 +84,7 @@
             "}",
             "",
             "type State = {",
-            "    ",  
+            "    ",
             "}",
             "",
             "class ${1:MyClass} extends PureComponent {",
@@ -220,10 +220,16 @@
         "prefix": "nav params",
         "body": "this.props.navigation.state.params."
     },
-    
     "import element": {
         "prefix": "import element",
         "body": "import {ListItem, List} from 'react-native-elements'"
+    },
+    "async": {
+        "prefix": "async",
+        "body": [
+            "requestData = async () => {",
+            "    let response = await Request.",
+            "}"
+        ]
     }
-    
 }
