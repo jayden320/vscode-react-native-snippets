@@ -75,9 +75,10 @@
             " * @flow",
             " */",
             "",
-            "import React, { PureComponent } from 'react'",
-            "import { View, StyleSheet } from 'react-native'",
-            "import { t, color, screen, Text, Scene } from '../JYKit'",
+            "import React, {PureComponent} from 'react'",
+            "import {StyleSheet } from 'react-native'",
+            "import {View, Text, Colors, Image, TouchableOpacity} from 'react-native-ui-lib'"
+            "import {t, color, screen, Scene} from '../uikit'",
             "",
             "type Props = {",
             "    ",
@@ -224,5 +225,47 @@
             "    let response = await Request.",
             "}"
         ]
-    }
+    },
+
+
+    "create simple class": {
+        "prefix": "cc",
+        "body": [
+            "/**",
+            " * Copyright (c) 2017-present, Daniel",
+            " * All rights reserved.",
+            " *",
+            " * @flow",
+            " */",
+            "",
+            "import React, {PureComponent} from 'react'",
+            "import {StyleSheet, View, Image, Text} from 'react-native'",
+            "",
+            "type Props = {",
+            "    ",
+            "}",
+            "",
+            "type State = {",
+            "    ",
+            "}",
+            "",
+            "class ${1:MyClass} extends PureComponent<Props, State> {",
+            "",
+            "    render() {",
+            "        return (",
+            "            <View>",
+            "                ",
+            "            </View>",
+            "        )",
+            "     }",
+            "",
+            "}",
+            "",
+            "const styles = StyleSheet.create({",
+            "    ",
+            "})",
+            "",
+            "export default ${1:MyClass}"
+        ]
+    },
 }
