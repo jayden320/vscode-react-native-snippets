@@ -78,7 +78,7 @@
             "import React, {PureComponent} from 'react'",
             "import {StyleSheet } from 'react-native'",
             "import {View, Text, Colors, Image, TouchableOpacity} from 'react-native-ui-lib'"
-            "import {t, color, screen, Scene} from '../uikit'",
+            "import {t, screen, Scene} from '../uikit'",
             "",
             "type Props = {",
             "    ",
