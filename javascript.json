@@ -47,7 +47,7 @@
     "constructor": {
         "prefix": "cst",
         "body": [
-            "constructor(props: Object) {",
+            "constructor(props: Props) {",
             "    super(props)",
             "",
             "    $1",
@@ -65,8 +65,8 @@
             " */"
         ]
     },
-    "create class": {
-        "prefix": "rncc",
+    "create scene": {
+        "prefix": "cs",
         "body": [
             "/**",
             " * Copyright (c) 2017-present, Liu Jinyong",
@@ -77,8 +77,8 @@
             "",
             "import React, {PureComponent} from 'react'",
             "import {StyleSheet } from 'react-native'",
-            "import {View, Text, Colors, Image, TouchableOpacity} from 'react-native-ui-lib'"
-            "import {t, screen, Scene} from '../uikit'",
+            "import {View, Text, Colors, Image, TouchableOpacity} from 'react-native-ui-lib'",
+            "import {s, screen, Scene} from '../uikit'",
             "",
             "type Props = {",
             "    ",
@@ -107,21 +107,13 @@
             "export default ${1:MyClass}"
         ]
     },
-    "then response": {
-        "prefix": "response",
-        "body": [
-            ".then(response => {",
-            "    ${1}",
-            "})"
-        ]
-    },
     "debug fuck": {
         "prefix": "fuck",
         "body": [
             "alert('fuck')"
         ]
     },
-    "navigation ": {
+    "navigation options": {
         "prefix": "navopt",
         "body": [
             "static navigationOptions = ({ navigation }) => ({",
@@ -150,41 +142,6 @@
     "ref": {
         "prefix": "ref",
         "body": "ref={(e) => this.${1:obj} = e}"
-    },
-    "button": {
-        "prefix": "button",
-        "body": [
-            "<Button",
-            "    containerViewStyle={{ marginTop: 20 }}",
-            "    buttonStyle={{ height: 35 }}",
-            "    raised",
-            "    title='测  试'",
-            "    color='#ff0000'",
-            "    backgroundColor='#0000ff'",
-            "    iconRight",
-            "    // icon={{ name: 'align-vertical-middle', type: 'entypo', color: '#00ff00' }}",
-            "    iconComponent={() =>",
-            "        <Image",
-            "            style={{ width: 20, height: 20, margin: 5 }}",
-            "            source={require('../img/search_icon.png')}",
-            "        />",
-            "    }",
-            "/>"
-        ]
-    },
-    "searchBar": {
-        "prefix": "searchBar",
-        "body": [
-            "<SearchBar",
-            "    round",
-            "    lightTheme",
-            "    clearIcon",
-            "    textInputRef='searchBar'",
-            "    placeholder='Type Here...'",
-            "    containerStyle={{ backgroundColor: 'transparency', borderTopWidth: 0 ,borderBottomWidth:0}}",
-            "    inputStyle={{backgroundColor: 'red',}}",
-            "/>"
-        ]
     },
     "setTimeout": {
         "prefix": "setTimeout",
@@ -218,21 +175,19 @@
         "prefix": "nav params",
         "body": "this.props.navigation.state.params."
     },
-    "async": {
-        "prefix": "async",
+    "request data": {
+        "prefix": "request data",
         "body": [
             "requestData = async () => {",
             "    let response = await Request.",
             "}"
         ]
     },
-
-
-    "create simple class": {
-        "prefix": "cc",
+    "create view": {
+        "prefix": "cv",
         "body": [
             "/**",
-            " * Copyright (c) 2017-present, Daniel",
+            " * Copyright (c) 2017-present, Liu Jinyong",
             " * All rights reserved.",
             " *",
             " * @flow",
@@ -245,11 +200,7 @@
             "    ",
             "}",
             "",
-            "type State = {",
-            "    ",
-            "}",
-            "",
-            "class ${1:MyClass} extends PureComponent<Props, State> {",
+            "class ${1:MyClass} extends PureComponent<Props> {",
             "",
             "    render() {",
             "        return (",
