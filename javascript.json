@@ -1,5 +1,5 @@
 {
-    /*
+  /*
 	// Place your snippets for Javascript (Babel) here. Each snippet is defined under a snippet name and has a prefix, body and 
 	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
@@ -14,209 +14,210 @@
 		"description": "Log output to console"
 	}
 */
-    "style flexDirection row": {
-        "prefix": "flex row",
-        "body": [
-            "flexDirection: 'row',"
-        ]
-    },
-    "style flexWrap wrap": {
-        "prefix": "flex wrap",
-        "body": [
-            "flexWrap: 'wrap',"
-        ]
-    },
-    "style justifyContent center": {
-        "prefix": "justify center",
-        "body": [
-            "justifyContent: 'center',"
-        ]
-    },
-    "style alignItems center": {
-        "prefix": "alignItems center",
-        "body": [
-            "alignItems: 'center',"
-        ]
-    },
-    "style backgroundColor white": {
-        "prefix": "backgroundColor white",
-        "body": [
-            "backgroundColor: 'white',"
-        ]
-    },
-    "constructor": {
-        "prefix": "cst",
-        "body": [
-            "constructor(props: Props) {",
-            "    super(props)",
-            "",
-            "    $1",
-            "}"
-        ]
-    },
-    "copyright": {
-        "prefix": "copyright",
-        "body": [
-            "/**",
-            " * Copyright (c) 2017-present, Liu Jinyong",
-            " * All rights reserved.",
-            " *",
-            " * @flow",
-            " */"
-        ]
-    },
-    "create scene": {
-        "prefix": "cs",
-        "body": [
-            "/**",
-            " * Copyright (c) 2017-present, Liu Jinyong",
-            " * All rights reserved.",
-            " *",
-            " * @flow",
-            " */",
-            "",
-            "import React, {PureComponent} from 'react'",
-            "import {StyleSheet } from 'react-native'",
-            "import {View, Text, Colors, Image, TouchableOpacity} from 'react-native-ui-lib'",
-            "import {s, screen, Scene} from '../uikit'",
-            "",
-            "type Props = {",
-            "    ",
-            "}",
-            "",
-            "type State = {",
-            "    ",
-            "}",
-            "",
-            "class ${1:MyClass} extends PureComponent<Props, State> {",
-            "",
-            "    render() {",
-            "        return (",
-            "            <Scene>",
-            "                ",
-            "            </Scene>",
-            "        )",
-            "     }",
-            "",
-            "}",
-            "",
-            "const styles = StyleSheet.create({",
-            "    ",
-            "})",
-            "",
-            "export default ${1:MyClass}"
-        ]
-    },
-    "debug fuck": {
-        "prefix": "fuck",
-        "body": [
-            "alert('fuck')"
-        ]
-    },
-    "navigation options": {
-        "prefix": "navopt",
-        "body": [
-            "static navigationOptions = ({ navigation }) => ({",
-            "    title: '${1:title}',",
-            "})"
-        ]
-    },
-    "log": {
-        "prefix": "clog",
-        "body": [
-            "console.log('${1:text}')"
-        ]
-    },
-    "set state": {
-        "prefix": "sst",
-        "body": "this.setState({ ${1:key}: ${2:value} })"
-    },
-    "arrow function": {
-        "prefix": "arrow function",
-        "body": [
-            "(${2}) => {",
-            "    ${3}",
-            "}"
-        ]
-    },
-    "ref": {
-        "prefix": "ref",
-        "body": "ref={(e) => this.${1:obj} = e}"
-    },
-    "setTimeout": {
-        "prefix": "setTimeout",
-        "body": [
-            "setTimeout(() => {",
-            "    ${1}",
-            "}, ${2:timeout})"
-        ]
-    },
-    "await": {
-        "prefix": "await",
-        "body": [
-            "try {",
-            "    let response = await fetch(${1})",
-            "    let json = await response.json()",
-            "    ${2}",
-            "} catch (error) {",
-            "    alert(error)",
-            "}"
-        ]
-    },
-    "add scene": {
-        "prefix": "add scene",
-        "body": "${1}: {screen: ${1}, navigationOptions: {title: '${2}'}},"
-    },
-    "comment": {
-        "prefix": "comment",
-        "body": "{/* ${1} */}"
-    },
-    "nav params": {
-        "prefix": "nav params",
-        "body": "this.props.navigation.state.params."
-    },
-    "request data": {
-        "prefix": "request data",
-        "body": [
-            "requestData = async () => {",
-            "    let response = await Request.",
-            "}"
-        ]
-    },
-    "create view": {
-        "prefix": "cv",
-        "body": [
-            "/**",
-            " * Copyright (c) 2017-present, Liu Jinyong",
-            " * All rights reserved.",
-            " *",
-            " * @flow",
-            " */",
-            "",
-            "import React, {PureComponent} from 'react'",
-            "import {StyleSheet, View, Image, Text} from 'react-native'",
-            "",
-            "type Props = {",
-            "    ",
-            "}",
-            "",
-            "class ${1:MyClass} extends PureComponent<Props> {",
-            "",
-            "    render() {",
-            "        return (",
-            "            <View>",
-            "                ",
-            "            </View>",
-            "        )",
-            "     }",
-            "",
-            "}",
-            "",
-            "const styles = StyleSheet.create({",
-            "    ",
-            "})",
-            "",
-            "export default ${1:MyClass}"
-        ]
-    },
+  "style flexDirection row": {
+    "prefix": "flex row",
+    "body": [
+      "flexDirection: 'row',"
+    ]
+  },
+  "style flexWrap wrap": {
+    "prefix": "flex wrap",
+    "body": [
+      "flexWrap: 'wrap',"
+    ]
+  },
+  "style justifyContent center": {
+    "prefix": "justify center",
+    "body": [
+      "justifyContent: 'center',"
+    ]
+  },
+  "style alignItems center": {
+    "prefix": "alignItems center",
+    "body": [
+      "alignItems: 'center',"
+    ]
+  },
+  "style backgroundColor white": {
+    "prefix": "backgroundColor white",
+    "body": [
+      "backgroundColor: 'white',"
+    ]
+  },
+  "constructor": {
+    "prefix": "cst",
+    "body": [
+      "constructor(props: Props) {",
+      "  super(props)",
+      "",
+      "  $1",
+      "}"
+    ]
+  },
+  "copyright": {
+    "prefix": "copyright",
+    "body": [
+      "/**",
+      " * Copyright (c) 2017-present, Liu Jinyong",
+      " * All rights reserved.",
+      " *",
+      " * @flow",
+      " */"
+    ]
+  },
+  "create scene": {
+    "prefix": "cs",
+    "body": [
+      "/**",
+      " * Copyright (c) 2017-present, Liu Jinyong",
+      " * All rights reserved.",
+      " *",
+      " * @flow",
+      " */",
+      "",
+      "import React, {PureComponent} from 'react'",
+      "import {StyleSheet } from 'react-native'",
+      "import {View, Text, Colors, Image, TouchableOpacity} from 'react-native-ui-lib'",
+      "import {s, screen, Scene} from '../uikit'",
+      "",
+      "type Props = {",
+      "  ",
+      "}",
+      "",
+      "type State = {",
+      "  ",
+      "}",
+      "",
+      "class ${1:MyClass} extends PureComponent<Props, State> {",
+      "",
+      "  render() {",
+      "    return (",
+      "      <Scene>",
+      "        ",
+      "      </Scene>",
+      "    )",
+      "   }",
+      "",
+      "}",
+      "",
+      "const styles = StyleSheet.create({",
+      "  ",
+      "})",
+      "",
+      "export default ${1:MyClass}"
+    ]
+  },
+  "debug fuck": {
+    "prefix": "fuck",
+    "body": [
+      "alert('fuck')"
+    ]
+  },
+  "navigation options": {
+    "prefix": "navopt",
+    "body": [
+      "static navigationOptions = ({ navigation }) => ({",
+      "  title: '${1:title}',",
+      "})"
+    ]
+  },
+  "log": {
+    "prefix": "clog",
+    "body": [
+      "console.log('${1:text}')"
+    ]
+  },
+  "set state": {
+    "prefix": "sst",
+    "body": "this.setState({ ${1:key}: ${2:value} })"
+  },
+  "arrow function": {
+    "prefix": "arrow function",
+    "body": [
+      "(${2}) => {",
+      "  ${3}",
+      "}"
+    ]
+  },
+  "ref": {
+    "prefix": "ref",
+    "body": "ref={(e) => this.${1:obj} = e}"
+  },
+  "setTimeout": {
+    "prefix": "setTimeout",
+    "body": [
+      "setTimeout(() => {",
+      "  ${1}",
+      "}, ${2:timeout})"
+    ]
+  },
+  "await": {
+    "prefix": "await",
+    "body": [
+      "try {",
+      "  let response = await fetch(${1})",
+      "  let json = await response.json()",
+      "  ${2}",
+      "} catch (error) {",
+      "  alert(error)",
+      "}"
+    ]
+  },
+  "add scene": {
+    "prefix": "add scene",
+    "body": "${1}: {screen: ${1}, navigationOptions: {title: '${2}'}},"
+  },
+  "comment": {
+    "prefix": "comment",
+    "body": "{/* ${1} */}"
+  },
+  "nav params": {
+    "prefix": "nav params",
+    "body": "this.props.navigation.state.params."
+  },
+  "request data": {
+    "prefix": "request data",
+    "body": [
+      "requestData = async () => {",
+      "  let response = await Request.",
+      "}"
+    ]
+  },
+  "create view": {
+    "prefix": "cv",
+    "body": [
+      "/**",
+      " * Copyright (c) 2017-present, Liu Jinyong",
+      " * All rights reserved.",
+      " *",
+      " * @flow",
+      " */",
+      "",
+      "import React, {PureComponent} from 'react'",
+      "import {StyleSheet, View, Image, Text} from 'react-native'",
+      "",
+      "type Props = {",
+      "  ",
+      "}",
+      "",
+      "class ${1:MyClass} extends PureComponent<Props> {",
+      "",
+      "  render() {",
+      "    return (",
+      "      <View>",
+      "        ",
+      "      </View>",
+      "    )",
+      "   }",
+      "",
+      "}",
+      "",
+      "const styles = StyleSheet.create({",
+      "  ",
+      "})",
+      "",
+      "export default ${1:MyClass}"
+    ]
+  }
+  
 }
